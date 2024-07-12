@@ -24,6 +24,7 @@
         #verticalButtons {
             display: flex;
             flex-direction: column;
+            gap:1rem;
         }
 
         button {
@@ -46,6 +47,7 @@
         #networkCanvas {
             background: #000;
         }
+      
     </style>
     <script src="scripts/visualizer.js" defer></script>
     <script src="scripts/network.js" defer></script>
@@ -58,11 +60,12 @@
 </head>
 
 <body>
-    <canvas id="carCanvas"></canvas>
     <div id="verticalButtons">
         <button onclick="save()">💾</button>
         <button onclick="discard()">🗑️</button>
     </div>
+    <canvas id="carCanvas"></canvas>
+  
     <canvas id="networkCanvas"></canvas>
 
 </body>
